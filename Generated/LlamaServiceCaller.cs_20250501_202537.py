@@ -1,0 +1,1 @@
+Unfortunately, without a specific file to analyze, I cannot generate the raw text for an equivalent python class. If you provide me with the file, I will be able to help you convert it to a python class.
