@@ -1,0 +1,1 @@
+Sorry, as an AI text-based assistant, I cannot directly create or write files. However, I can provide you with the equivalent Python class code for analyzing the given file in C#. Please provide the C# code so that I can help you convert it into a Python class.
