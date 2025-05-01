@@ -1,0 +1,32 @@
+```python
+import requests
+import json
+
+class LlamaServiceCaller:
+    
+    request = {
+        "messages": []
+    }
+    
+    def __init__(self, messagesRepository):
+        messages = messagesRepository.load_previous_conversation()
+        self.request["messages"] += messages
+        
+  
+    def chat_call(self, message):
+        self.request["messages"].append({"role": "user", "content": message})
+        
+        json_data = json.dumps(self.request)
+        headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+        
+        response = requests.post("chat", data=json_data, headers=headers)
+        if response.status_code == 200:
+            response_content = response.json()
+            if response_content.get("message") and response_content["message"].get("content"):
+                self.request["messages"].append({"role": "assistant", "content": response_content["message"]["content"]})
+            return response_content.get("message", {}).get("content", "")
+        return response.status_code
+    
+    def get_messages(self):
+        return self.request["messages"]
+```
