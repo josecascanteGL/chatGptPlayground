@@ -1,0 +1,19 @@
+// This code defines a partial class app_unicorn_basket within the UnicornShopLegacy namespace
+// The class has properties for basket_id, user_id, unicorn_id, creation_date, and active
+
+namespace UnicornShopLegacy
+{
+    using System; // Import the System namespace
+    using System.Collections.Generic; // Import the System.Collections.Generic namespace
+    
+    // Define the partial class app_unicorn_basket
+    public partial class app_unicorn_basket
+    {
+        // Define properties for basket_id, user_id, unicorn_id, creation_date, and active
+        public System.Guid basket_id { get; set; }
+        public System.Guid user_id { get; set; }
+        public System.Guid unicorn_id { get; set; }
+        public System.DateTime creation_date { get; set; }
+        public Nullable<byte> active { get; set; }
+    }
+}
