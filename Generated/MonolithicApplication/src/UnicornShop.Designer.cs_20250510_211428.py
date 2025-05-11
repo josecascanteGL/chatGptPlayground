@@ -1,5 +1,0 @@
-This class is a generated model from an Entity Framework data model (`.edmx` file). It is a representation of the database schema and the entities within that schema. The comments in the code indicate that code generation is enabled for the model and provide instructions on how to update or generate context and entity classes from the model.
-
-The logic of this class is to provide a mapping between the database tables and the corresponding entities in the application. This allows for easy interaction with the database using object-oriented programming principles. The class likely contains properties that map to columns in the database tables, methods for querying and manipulating data, and relationships between entities.
-
-Overall, this class serves as a bridge between the database and the application code, making it easier to work with data in the application.
